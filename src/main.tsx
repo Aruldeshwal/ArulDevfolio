@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App'
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
-import TermsOfUsePage from './pages/TermsofUsePage'
+import TermsOfUsePage from './pages/TermsOfUsePage'
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 createRoot(document.getElementById('root')!).render(

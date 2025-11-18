@@ -42,7 +42,7 @@ const ScrollStack = <T extends DataItem>({
   stackPosition = '20%',
   scaleEndPosition = '10%',
   baseScale = 0.85,
-  scaleDuration = 0.5,
+  scaleDuration = 0,
   rotationAmount = 0,
   blurAmount = 0,
   useWindowScroll = false,
@@ -302,9 +302,7 @@ const ScrollStack = <T extends DataItem>({
       card.style.transformOrigin = 'top center';
       card.style.backfaceVisibility = 'hidden';
       card.style.transform = 'translateZ(0)';
-      card.style.webkitTransform = 'translateZ(0)';
       card.style.perspective = '1000px';
-      card.style.webkitPerspective = '1000px';
     });
 
     setupLenis();
