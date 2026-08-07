@@ -3,7 +3,7 @@ import DownloadButton from '../components/DownloadButton';
 
 // --- Configuration ---
 // IMPORTANT: Replace this with the actual path to your Resume PDF file in your public directory
-const RESUME_PDF_PATH = '/assets/ResumeEnhanced.pdf'; 
+const RESUME_PDF_PATH = '/assets/Resume_Enhanced.pdf'; 
 
 // --- Lazy Loading Implementation ---
 // We create a component that will only be rendered once the parent is loaded.
