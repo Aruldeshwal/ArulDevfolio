@@ -47,7 +47,7 @@ const ProjectsStack = <T,>({ data, renderItem }: ProjectsStackProps<T>) => {
         <div ref={containerRef} className="relative w-full padding-x-lg pb-32">
             <div className="mb-12">
                 <h1 className="text-4xl md:text-5xl font-bold text-white">
-                    <span className="text-blue-50">#</span>Projects
+                    <span className="text-white-50">#</span>Projects
                 </h1>
                 <p className="text-white-50/60 text-lg mt-2">
                     A showcase of projects built with passion and engineering discipline.

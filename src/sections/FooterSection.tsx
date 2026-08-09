@@ -31,7 +31,7 @@ const Footer = () => {
                     <div className="md:w-2/5 w-full flex md:justify-end justify-start">
                         <a 
                             href={`mailto:${CONTACT_EMAIL}`} 
-                            className="text-2xl md:text-3xl font-bold text-white-50 hover:text-white transition-colors duration-300 underline underline-offset-8 decoration-white-50 hover:decoration-white"
+                            className="text-2xl md:text-3xl font-bold text-white-50 hover:text-white transition-colors duration-300 underline underline-offset-8 decoration-white-50 hover:decoration-white break-all md:break-normal"
                         >
                             {CONTACT_EMAIL}
                         </a>
