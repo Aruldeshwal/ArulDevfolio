@@ -10,30 +10,21 @@ import { ProjectsSection } from "./sections/ProjectsSection"
 
 const App = () => {
   return (
-    <>
-        <Navbar />
-        <Hero />
-        <div className="h-5 w-full" id="introduction"></div>
-        <IntroductionSection/>
-        <LogoSection />
-        <div className="h-10 w-full" id="projects">
-        </div>
-        
-        <ProjectsSection />
-        <div className="h-20 w-full"></div>
-        <VelocityText/>
-        <div className="h-20 w-full" id="skills"></div>
-        <div className="w-full mt-20 ml-30">
-            <h1 className="text-4xl md:text-5xl font-bold">
-                <span className="text-white-50">#</span>Skills
-            </h1>
-        </div>
-        <SkillShowcase/>
-        <div className="h-220 w-full"></div>
-        <div className="h-30 w-full" id="resume"></div>
-        <ResumeSection/>
-        <Footer/>
-    </>
+    <main className="relative bg-black text-white min-h-screen overflow-x-hidden selection:bg-blue-50 selection:text-black">
+      <Navbar />
+      <Hero />
+      <div id="introduction" />
+      <IntroductionSection />
+      <LogoSection />
+      <div id="projects" />
+      <ProjectsSection />
+      <VelocityText />
+      <div id="skills" />
+      <SkillShowcase />
+      <div id="resume" />
+      <ResumeSection />
+      <Footer />
+    </main>
   )
 }
 

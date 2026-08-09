@@ -9,13 +9,17 @@ import AnimatedCounter from "../components/AnimatedCounter";
 const Hero = () => {
     const container = useRef<HTMLDivElement>(null);
     
-     useGSAP(() => {
-    gsap.fromTo(
-      container.current!.querySelectorAll("h1"),
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, ease: "power2.inOut", stagger: 0.2 }
-    );
-  }, { scope: container });
+    useGSAP(() => {
+        if (!container.current) return;
+        const elements = container.current.querySelectorAll("h1");
+        if (elements.length > 0) {
+            gsap.fromTo(
+                elements,
+                { y: 50, opacity: 0 },
+                { y: 0, opacity: 1, duration: 1, ease: "power2.inOut", stagger: 0.2 }
+            );
+        }
+    }, { scope: container });
   
   return (
     <section id="hero" className="relative overflow-hidden">

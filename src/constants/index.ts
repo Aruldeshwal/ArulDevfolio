@@ -44,36 +44,36 @@ const navLinks = [
 ];
 
 const frontendIcons = [
-  { 
-    iconCode: 'assets/html.png', 
-    iconColor: '#E34F26', 
-    text: 'HTML' 
-  },
-  { 
-    iconCode: 'assets/css.png', 
-    iconColor: '#1572B6', 
-    text: 'CSS' 
-  },
-  { 
-    iconCode: 'assets/javascript.png', 
-    iconColor: '#F7DF1E', 
-    text: 'JavaScript' 
-  },
-  { 
-    iconCode: 'assets/typescript.png', 
-    iconColor: '#3178C6', 
-    text: 'TypeScript' 
-  },
   { 
-    iconCode: 'assets/tailwind.png', 
-    iconColor: '#06B6D4', 
-    text: 'Tailwind' 
-  },
-  { 
-    iconCode: 'assets/react.png', 
-    iconColor: '#61DAFB', 
-    text: 'React' 
-  },
+    iconCode: 'assets/html.png', 
+    iconColor: '#E34F26', 
+    text: 'HTML' 
+  },
+  { 
+    iconCode: 'assets/css.png', 
+    iconColor: '#1572B6', 
+    text: 'CSS' 
+  },
+  { 
+    iconCode: 'assets/javascript.png', 
+    iconColor: '#F7DF1E', 
+    text: 'JavaScript' 
+  },
+  { 
+    iconCode: 'assets/typescript.png', 
+    iconColor: '#3178C6', 
+    text: 'TypeScript' 
+  },
+  { 
+    iconCode: 'assets/tailwind.png', 
+    iconColor: '#06B6D4', 
+    text: 'Tailwind' 
+  },
+  { 
+    iconCode: 'assets/react.png', 
+    iconColor: '#61DAFB', 
+    text: 'React' 
+  },
   { 
     iconCode: 'assets/next.png', 
     iconColor: '#111111', 
@@ -82,36 +82,36 @@ const frontendIcons = [
 ];
 
 const backendIcons = [
-  { 
-    iconCode: 'assets/node.png', 
-    iconColor: '#339933', 
-    text: 'Node.js' 
-  },
-  { 
-    iconCode: 'assets/express.png', 
-    iconColor: '#000000', // Express.js often uses a dark or black logo
-    text: 'Express' 
-  },
-  { 
-    iconCode: 'assets/mongo.png', 
-    iconColor: '#47A248', 
-    text: 'MongoDB' 
-  },
-  { 
-    iconCode: 'assets/python.png', 
-    iconColor: '##ffde57', 
-    text: 'Python' 
-  },
-  { 
-    iconCode: 'assets/postgresql.png', 
-    iconColor: '#336791', 
-    text: 'PostgreSQL' 
-  },
-  { 
-    iconCode: 'assets/docker.png', 
-    iconColor: '#2496ED', 
-    text: 'Docker' 
-  },
+  { 
+    iconCode: 'assets/node.png', 
+    iconColor: '#339933', 
+    text: 'Node.js' 
+  },
+  { 
+    iconCode: 'assets/express.png', 
+    iconColor: '#000000', // Express.js often uses a dark or black logo
+    text: 'Express' 
+  },
+  { 
+    iconCode: 'assets/mongo.png', 
+    iconColor: '#47A248', 
+    text: 'MongoDB' 
+  },
+  { 
+    iconCode: 'assets/python.png', 
+    iconColor: '##ffde57', 
+    text: 'Python' 
+  },
+  { 
+    iconCode: 'assets/postgresql.png', 
+    iconColor: '#336791', 
+    text: 'PostgreSQL' 
+  },
+  { 
+    iconCode: 'assets/docker.png', 
+    iconColor: '#2496ED', 
+    text: 'Docker' 
+  },
 ];
 
 const logoIconsList = [

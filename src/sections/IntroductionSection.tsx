@@ -88,7 +88,7 @@ const IntroductionSection: React.FC = () => {
                             {/* Image/Photo Container */}
                             <div className="relative w-full aspect-square overflow-hidden mb-5"> 
                                 <img 
-                                    src="/images/Arul.jpg" 
+                                    src="/images/LinkedinArul.jpeg" 
                                     alt="Professional portrait of Arul Deshwal" 
                                     className="w-full h-full object-cover rounded-xl shadow-2xl shadow-black/80 transition-transform duration-500 ring-2 ring-cyan-400/50" 
                                 />

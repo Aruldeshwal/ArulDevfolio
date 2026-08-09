@@ -91,8 +91,11 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
     scrollerStyle
   }: VelocityTextProps) {
     const baseX = useMotionValue(0);
-    const scrollOptions = scrollContainerRef ? { container: scrollContainerRef } : {};
-    const { scrollY } = useScroll(scrollOptions);
+    const { scrollY } = useScroll(
+      scrollContainerRef
+        ? { container: scrollContainerRef as React.RefObject<HTMLElement> }
+        : undefined
+    );
     const scrollVelocity = useVelocity(scrollY);
     const smoothVelocity = useSpring(scrollVelocity, {
       damping: damping ?? 50,

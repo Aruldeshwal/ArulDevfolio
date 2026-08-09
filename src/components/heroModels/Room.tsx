@@ -4,12 +4,10 @@ Command: npx gltfjsx@6.5.3 public/models/optimized-room.glb -t -o src/components
 */
 
 import * as THREE from 'three'
-import { useRef } from "react";
 import { useGLTF, useTexture } from '@react-three/drei'
 import type { GLTF } from 'three-stdlib'
 import type { JSX } from 'react'
-import { BlendFunction } from "postprocessing";
-import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
+import { EffectComposer, Bloom } from "@react-three/postprocessing";
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -56,7 +54,6 @@ type GLTFResult = GLTF & {
 
 export function Room(props: JSX.IntrinsicElements['group']) {
   const matcapTexture = useTexture('/images/textures/mat1.png')
-  const screensRef = useRef<THREE.Mesh | null>(null);
   const { nodes, materials } = useGLTF('/models/optimized-room.glb') as unknown as GLTFResult
   const curtainMaterial = new THREE.MeshPhongMaterial({
     color: "#d90429",
@@ -89,12 +86,9 @@ export function Room(props: JSX.IntrinsicElements['group']) {
   return (
     <group {...props} dispose={null}>
       <EffectComposer>
-        <SelectiveBloom
-          selection={screensRef.current!}
-          intensity={1.5} // Strength of the bloom
-          luminanceThreshold={0.2} // Minimum luminance needed
-          luminanceSmoothing={0.9} // Smooth transition
-          blendFunction={BlendFunction.ADD} // How it blends
+        <Bloom
+          intensity={1.5}
+          luminanceThreshold={0.2}
         />
       </EffectComposer>
       <mesh
@@ -109,7 +103,6 @@ export function Room(props: JSX.IntrinsicElements['group']) {
       />
       <mesh geometry={nodes.comp_blinn1_0.geometry} material={compMaterial} />
       <mesh
-        ref={screensRef}
         geometry={nodes.emis_lambert1_0.geometry}
         material={materials.lambert1}
       />

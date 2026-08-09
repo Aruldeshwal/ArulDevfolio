@@ -11,8 +11,13 @@ interface ParticlesProps {
   count?: number;
 }
 
+function getPseudoRandom(seed: number) {
+  const x = Math.sin(seed + 1.234) * 10000;
+  return x - Math.floor(x);
+}
+
 const Particles: React.FC<ParticlesProps> = ({ count = 200 }) => {
-  const mesh = useRef<THREE.Points<THREE.BufferGeometry, THREE.PointsMaterial>>(null);
+  const mesh = useRef<THREE.Points>(null);
 
   // create particles once
   const particles = useMemo<Particle[]>(() => {
@@ -20,11 +25,11 @@ const Particles: React.FC<ParticlesProps> = ({ count = 200 }) => {
     for (let i = 0; i < count; i++) {
       temp.push({
         position: [
-          (Math.random() - 0.5) * 10,
-          Math.random() * 10 + 5, // higher starting point
-          (Math.random() - 0.5) * 10,
+          (getPseudoRandom(i * 3) - 0.5) * 10,
+          getPseudoRandom(i * 3 + 1) * 10 + 5, // higher starting point
+          (getPseudoRandom(i * 3 + 2) - 0.5) * 10,
         ],
-        speed: 0.005 + Math.random() * 0.001,
+        speed: 0.005 + getPseudoRandom(i * 7) * 0.001,
       });
     }
     return temp;
