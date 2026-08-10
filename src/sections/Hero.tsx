@@ -5,9 +5,11 @@ import { useGSAP } from "@gsap/react"
 import gsap from "gsap";
 import { useRef } from "react";
 import AnimatedCounter from "../components/AnimatedCounter";
+import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
     const container = useRef<HTMLDivElement>(null);
+    const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
     
     useGSAP(() => {
         if (!container.current) return;
@@ -50,13 +52,14 @@ const Hero = () => {
                     <Button className="md:w-80 md:h-16 w-60 h-12" id="button" text="See my Work" />
                 </div>
             </header>
-            {/*Right Hero Section*/}
-            <figure>
-                <div className="hero-3d-layout">
-                    
-                    <HeroExperience/>
-                </div>
-            </figure>
+            {/*Right Hero Section — hidden on mobile for performance */}
+            {!isMobile && (
+                <figure>
+                    <div className="hero-3d-layout">
+                        <HeroExperience/>
+                    </div>
+                </figure>
+            )}
         </div>
         <AnimatedCounter/>
     </section>
