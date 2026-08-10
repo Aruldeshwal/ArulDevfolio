@@ -16,7 +16,7 @@ const LazyPdfViewer = () => (
         title="Professional Resume PDF"
         // ADJUSTED HEIGHT: Set a fixed, single-page-friendly height (e.g., 1000px)
         // Removed h-screen to prevent disproportionate height
-        className="w-full border-0 rounded-xl"
+        className="w-full border-0 rounded-xl resume-iframe-mobile"
         // minHeight is set to a fixed value that closely matches a single A4 page aspect ratio when full width
         style={{ height: '1000px', minHeight: '1000px' }} 
         loading="lazy" // Standard HTML lazy loading attribute for iframe

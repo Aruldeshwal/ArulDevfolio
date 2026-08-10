@@ -47,7 +47,7 @@ const IntroductionSection: React.FC = () => {
             <div className="grid grid-cols-12 gap-6 padding-x-lg">
                 
                 {/* 1. Title Container */}
-                <div className="col-span-full xl:col-span-8 ml-5 md:ml-0 xl:ml-0">
+                <div className="col-span-full xl:col-span-8 md:ml-0 xl:ml-0">
                     <h1 className="text-4xl md:text-5xl font-bold">
                         <span className="text-white-50">#</span>About Me
                     </h1>
@@ -60,7 +60,7 @@ const IntroductionSection: React.FC = () => {
                 {/* 3. Left Column Content: Bio Card */}
                 <div className="col-span-full mt-15 xl:col-span-8">
                     <div
-                        className="card card-border p-10 md:p-12 ml-5 md:ml-0" 
+                        className="card card-border p-10 md:p-12" 
                         ref={bioCardRef}
                         onMouseMove={handleMouseMove}
                     >

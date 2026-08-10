@@ -28,7 +28,7 @@ const Hero = () => {
         </div>
         <div className="hero-layout">
             {/*Left Hero Section*/}
-            <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
+            <header className="flex flex-col justify-center md:w-full w-full md:px-20 px-5">
                 <div className="flex flex-col gap-7">
                     <div ref={container} className="hero-text">
                         <h1>Shaping 
