@@ -61,7 +61,7 @@ const Footer = () => {
                         <h4 className="text-lg font-bold text-white">Legal & Ethos</h4>
                          <p className="text-sm text-blue-50">
                             <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a> / 
-                            <a href="/terms-of-use" className="hover:text-white transition-colors">Terms of Use</a>
+                            <a href="/agyterms-of-use" className="hover:text-white transition-colors">Terms of Use</a>
                         </p>
                         <p className="text-sm text-blue-50">
                             Building disciplined software and storytelling through design.

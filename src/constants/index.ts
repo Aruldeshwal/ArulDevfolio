@@ -4,6 +4,8 @@ export interface ProjectItem {
   name: string;
   designation: string;
   src: string; // Assuming 'src' is a string path to an image
+  liveUrl?: string;
+  githubUrl?: string;
 }
 
 const words = [
@@ -21,7 +23,7 @@ const counterItems = [
   { id: 1, value: 100, suffix: "%", label: "Enthusiasm for Learning" },
   { id: 2, value: 100, suffix: "%", label: "Passion for Programming" },
   { id: 3, value: 20, suffix: "+", label: "Skills in Development" },
-  { id: 4, value: 5, suffix: "+", label: "Projects in Various Niches" },
+  { id: 4, value: 6, suffix: "+", label: "Projects in Various Niches" },
 ];
 
 const navLinks = [
@@ -155,24 +157,57 @@ const logoIconsList = [
 const projects: ProjectItem[] = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
+        "A cutting-edge social matching platform for metro commuters — bridging daily transit and social connection through intelligent route matching, AI-powered conversations, and real-time chat.",
+      name: "Line-A-Link (MetroConnect)",
+      designation: "Next.js 15 · React 19 · PostgreSQL · Socket.io · Gemini AI",
       src: "/images/project1.png",
+      liveUrl: "https://metro-connect-lyart.vercel.app",
+      githubUrl: "https://github.com/Aruldeshwal/Metro-Connect",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
+        "An intelligent, RAG-powered job application tracking suite with drag-and-drop Kanban boards, resume-to-role matching, and AI-powered job description analysis.",
+      name: "Jobber AI",
+      designation: "Next.js · React · RAG AI · TypeScript · Tailwind CSS",
       src: "/images/project2.png",
+      liveUrl: "https://jobber-flax.vercel.app",
+      githubUrl: "https://github.com/Aruldeshwal/Jobber",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
+        "A modern full-stack scheduling application integrated with Google Calendar synchronization, Sanity headless CMS, and Clerk authentication.",
+      name: "Calvero",
+      designation: "Next.js 16 · React 19 · Sanity CMS · Clerk · Tailwind CSS",
       src: "/images/project3.png",
+      liveUrl: "https://calvero-mu.vercel.app",
+      githubUrl: "https://github.com/Aruldeshwal/Calvero",
+    },
+    {
+      quote:
+        "A peer-to-peer calendar time slot exchange application engineered for transactional integrity and atomic slot swaps using MERN stack.",
+      name: "SlotSwap",
+      designation: "MongoDB · Express · React · Node.js · TypeScript",
+      src: "/images/project4.png",
+      liveUrl: "https://slot-swap-omega.vercel.app",
+      githubUrl: "https://github.com/Aruldeshwal/SlotSwap",
+    },
+    {
+      quote:
+        "A complete full-stack experience & slot booking web app with robust server-side validation to eliminate double-booking and streamline payments.",
+      name: "BookIt",
+      designation: "React · Node.js · Express · MongoDB · Tailwind CSS",
+      src: "/images/project5.png",
+      liveUrl: "https://book-it-rosy.vercel.app/",
+      githubUrl: "https://github.com/Aruldeshwal/Book-IT",
+    },
+    {
+      quote:
+        "A high-performance machine learning sentiment predictor analyzing real-time user text with scikit-learn & NLTK NLP models in an interactive web UI.",
+      name: "Sentitude AI",
+      designation: "Python · Streamlit · Scikit-Learn · NLTK · Machine Learning",
+      src: "/images/project6.png",
+      liveUrl: "https://sentitude.streamlit.app/",
+      githubUrl: "https://github.com/Aruldeshwal/sentiment-analysis-app",
     },
   ];  
 
